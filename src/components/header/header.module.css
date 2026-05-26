@@ -1,0 +1,118 @@
+
+.header{
+    height:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(227,225,225);
+    border-bottom: 4px solid rgb(144, 144, 144);
+    position: relative;
+    color:black;
+    padding: 0 40px;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(176, 15, 176);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlinks {
+    margin-left: 30px;
+    display:flex;
+    flex-direction: row;
+}
+
+.navlink {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: blue;
+    color:white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.btn:hover {
+    background-color: darkblue;
+}
+
+.navlink:hover {
+    color: darkblue;
+}
+
+.menu {
+    font-size: 40px;
+    font-weight: bold;
+    color: #202121;
+    cursor: pointer;
+    display:none;
+}
+
+.icon {
+    position: absolute;
+    left: 0;
+    top: 30px;
+}
+
+@media (max-width: 640px){
+.logo {
+    display: none;
+}
+.menu {
+    display: block;
+}
+.navlinkwraper{
+    position: absolute;
+    left: 0;
+    top: 75px;
+    width: 100%;
+    background-color: indianred;
+    transition: all .5s ease-in;
+    z-index: 100;
+    background-color: rgb(227, 225, 225);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    display:flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+}
+.navlinks {
+    padding-left: 30px !important;
+    padding-bottom: 10px !important;
+    margin-left: 0 !important;
+    display:flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+}
+
+.navlink {
+    padding:0;
+    margin:12px 0;
+}
+
+}
